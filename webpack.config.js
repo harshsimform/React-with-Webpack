@@ -28,6 +28,10 @@ module.exports = {
           },
         },
       },
+      {
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+        loader: require.resolve("url-loader"),
+      },
     ],
   },
   resolve: {
