@@ -1,11 +1,24 @@
-import React from "react";
+// import React from "react";
+// import "./App.css";
 
-function App() {
+// const App = () => {
+//   return (
+//     <div>
+//       <h1 className="title">Hello, harsh!</h1>
+//     </div>
+//   );
+// };
+
+// export default App;
+import React from "react";
+import "./App.css";
+
+const App = () => {
   return (
     <div>
-      <h1 className="title">Hello, world!</h1>
+      <h1 className="title">Hello, harsh!</h1>
     </div>
   );
-}
+};
 
 export default App;
