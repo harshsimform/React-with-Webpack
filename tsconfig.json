@@ -14,11 +14,9 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    // "strict": true,
     "noImplicitAny": true,
-    // "strictNullChecks": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "src/index.d.ts"]
 }
