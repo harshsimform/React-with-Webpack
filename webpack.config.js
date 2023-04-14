@@ -13,7 +13,15 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
-      { test: /\\.(png|jp(e*)g|svg|gif)$/, use: ["file-loader"] },
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+        type: "asset/inline",
+      },
       {
         test: /\.(js|jsx|tsx)$/,
         exclude: /node_modules/,
@@ -27,10 +35,6 @@ module.exports = {
             ],
           },
         },
-      },
-      {
-        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-        loader: require.resolve("url-loader"),
       },
     ],
   },
