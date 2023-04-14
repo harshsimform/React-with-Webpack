@@ -5,6 +5,18 @@
   text-align: center;
 }
 
+.imgs {
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.webpack-logo {
+  width: 280px;
+  height: 250px;
+}
+
 .react-logo {
   width: 450px;
   height: 300px;

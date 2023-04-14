@@ -1,11 +1,15 @@
 import React from "react";
 import "./App.css";
 import reactLogo from "./asset/react-logo.png";
+import webpackLogo from "./asset/webpack.png";
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <img className="react-logo" src={reactLogo} alt="" />
+      <div className="imgs">
+        <img className="webpack-logo" src={webpackLogo} alt="" />
+        <img className="react-logo" src={reactLogo} alt="" />
+      </div>
       <h1 className="title">Webpack + React + TS</h1>
     </div>
   );
